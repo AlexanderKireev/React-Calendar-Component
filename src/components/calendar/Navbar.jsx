@@ -19,7 +19,7 @@ const Navbar = ({ handlePrev, handleNext, handleSave }) => {
           <Button handler={handlePrev}>&lt;</Button>
           <Button handler={handleSave} cn={"ml-2"}>{saveText}</Button>
         </div>
-        <span className="font-bold flex items-center text-2xl">{titulText}</span>
+        <span className="font-bold flex items-center md:text-xl lg:text-2xl">{titulText}</span>
         <Button handler={handleNext}>&gt;</Button>
       </div>
   );
