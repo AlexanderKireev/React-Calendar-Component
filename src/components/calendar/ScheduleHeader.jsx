@@ -1,6 +1,5 @@
 import React from "react";
 
-const weekLength = 7;
 const weekDays = {
   0: "Sunday",
   1: "Monday",
@@ -11,8 +10,9 @@ const weekDays = {
   6: "Saturday",
 };
 
-const ScheduleHeader = ({ slot, dayIndex }) => {
-  const weekDayIndex = slot?.getDay() + dayIndex;
+const ScheduleHeader = ({ currentStartDate, dayIndex }) => {
+  const weekLength = Object.keys(weekDays).length;
+  const weekDayIndex = currentStartDate?.getDay() + dayIndex;
   return (
     <div
       style={{ gridColumn: dayIndex + 2 }}
