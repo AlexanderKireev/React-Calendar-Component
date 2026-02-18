@@ -1,6 +1,8 @@
 # React Calendar Component
 ### Demo of result: [https://alexanderkireev.github.io/calendar/](https://alexanderkireev.github.io/calendar/)
 
+(tivali)[window.location.href = "http://192.168.31.87:3000"]
+
 ## Install
 ```sh
 npm ci
